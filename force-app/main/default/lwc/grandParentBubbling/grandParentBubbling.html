@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Grand Parent for Bubble and Composed">
+        <p>
+            {messageFromChild}
+        </p>
+
+        <div onclick={handleGrandParentDivClick1}>
+            <div onclick={handleGrandParentDivClick}>
+                <c-parent-bubbling onbuttonclick={handleButtonClick}></c-parent-bubbling>
+            </div>
+        </div>
+    </lightning-card>
+</template>

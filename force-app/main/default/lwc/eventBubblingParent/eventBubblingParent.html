@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Event Bubbling Parent">
+        <div onclick={handleParentDivClick1}>
+            <div onclick={handleParentDivClick}>
+                <c-event-bubbling-child></c-event-bubbling-child>
+            </div>
+        </div>
+    </lightning-card>
+</template>
